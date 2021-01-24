@@ -17,17 +17,15 @@
     "@babel/core": "^7.12.3",
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.12.1",
+    "ansi-colors": "^4.1.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "fs": "0.0.1-security",
-    "moment": "^2.20.1",
     "path": "^0.12.7"
   },
   "devDependencies": {
     "async": "^2.6.0",
     "axios": "^0.20.0",
-    "cheerio": "^1.0.0-rc.2",
-    "jsonfile": "^4.0.0",
     "nodemon": "^1.19.4"
   },
   "engines": {
