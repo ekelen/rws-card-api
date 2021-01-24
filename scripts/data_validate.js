@@ -26,7 +26,7 @@ const validate = (cards = null) => {
         `Bad attr "name_short"`
       );
       assert(c.desc && c.desc.length, `Bad attr "desc"`);
-      assert(parseInt(c.value_int, 10), `Bad attr "value_int"`);
+      assert(!Number.isNaN(parseInt(c.value_int, 10)), `Bad attr "value_int"`);
       assert(c.value && c.value.length, `Bad attr "value"`);
       assert(c.meaning_up && c.meaning_up.length, `Bad attr "meaning_up"`);
       assert(
@@ -59,8 +59,9 @@ const getCards = () => {
   try {
     const { cards } = require(path.join(
       __dirname,
-      "data",
-      "card_data_v2.json"
+      "../",
+      "static",
+      "card_data.json"
     ));
     return cards;
   } catch (error) {
